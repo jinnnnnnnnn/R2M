@@ -8,13 +8,6 @@ This is a minimal, training-free pipeline to merge specialist detectors into a *
 
 ---
 
-## Prerequisites
-
-- Your repo structure with:
-  - `detectors/task_vectors.py` exposing `ImageEncoder`, `ClassificationHead`, `ImageClassifier`, `TaskVector`
-  - `training/test.py` and dataset code as you posted
-- Specialist checkpoints at `models`, each including `backbone.*` and `head.*` tensors.
-
 ## Quickstart
 
 ### 0) Edit config
