@@ -5,7 +5,7 @@ Usage:
 python r2m/scripts/eval_merged.py \
   --detector_yaml ./training/config/detector/clip.yaml \
   --weights ./training/df40_weights/final_model/merged_headC.pth \
-  --datasets Celeb-DF-v2 FaceShifter DeeperForensics-1.0 \
+  --datasets FSAll_ff \
   --save-json ./results/merged.json --save-csv ./results/merged.csv
 """
 import argparse, subprocess, shlex, os
