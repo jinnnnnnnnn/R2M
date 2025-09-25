@@ -11,7 +11,7 @@ This is a minimal, training-free pipeline to merge specialist detectors into a *
 ## Quickstart
 
 ### 0) Edit config
-Update `r2m/configs/df40_core_example.yaml`:
+Update `r2m/configs/merged_clip.yaml`:
 - `weight_root`: folder with `fs_k8.pth`, `fr_k8.pth`, `efs_k8.pth`
 - `save`: output directory for merged models
 - `tasks`: list of specialist stems
