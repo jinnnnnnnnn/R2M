@@ -1,0 +1,37 @@
+exp_name: openai/clip-vit-large-patch14-R2M
+model: openai/clip-vit-large-patch14
+pretrained_model: openai
+data_location: ./
+weight_root: ./models/task3/
+save: ./models/merged/
+
+tasks: [fs_k8, fr_k8, efs_k8]
+
+
+merge_type: static
+merge_method: CORE    # CORE | CART | AVG | TA | TM(Ties-Merging)
+
+
+prior: 0.5            
+initial_rank_ratio: 0.1   
+real_rank_ratio: 1        
+real_blend_beta: 1.0      
+eta_norm_alpha: 0.6       
+lambda_cosine: false      
+
+
+device: auto
+half_precision: false
+save_avg: true
+
+
+test_dataset: [Celeb-DF-v2, FaceShifter, DeeperForensics-1.0]
+test_batchSize: 16
+workers: 4
+resolution: 224
+with_mask: false
+with_landmark: false
+
+
+mean: [0.5, 0.5, 0.5]
+std:  [0.5, 0.5, 0.5]
